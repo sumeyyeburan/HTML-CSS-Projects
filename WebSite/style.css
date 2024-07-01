@@ -3,8 +3,8 @@
 /*Her şey sıfırlanır*/
 *{
     box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 /*Arkaplan resmi ayarlanır*/

@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url(resimler/abstract-5719221_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center; /*yatay ortalar*/
+    align-items: center;     /*dikey ortalar*/    
+    min-height: 100vh;       /*viewport height yüksekliğinin %100üne eşitler*/
+}
+
+.login-form{
+    background: rgba(0,0,0,0.5); /*0.5 opaklığı ayarlar, 1 olursa saydalık 0 azalırsa saydamlık artar*/
+    min-width: 550px;
+    min-height: 250px;
+    color:whitesmoke;
+    display: flex;
+    flex-direction: column;  /*alt alta sıralar*/
+    padding:15px;
+}
+
+h1{
+    text-transform: uppercase;  /*bütün harfleri büyük yapar*/
+
+}
+
+.tpbox{
+    margin-top: 17px;
+    border:none;
+    border-bottom: 1px solid whitesmoke;
+    outline:none;
+    background: none;
+    font-size: 20px;
+    color:whitesmoke;
+    padding:7px;
+}
+
+.sbox{
+    margin-top: 30px;
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    background-color: whitesmoke;
+    outline: none;
+    border:none;
+    cursor:pointer;   /*imlec ayarı*/
+    transition: 0.5s; /*geçişin süresi*/
+}
+
+.sbox:hover{
+    background-color: transparent;
+    border:1px solid whitesmoke;
+    color:whitesmoke;
+}

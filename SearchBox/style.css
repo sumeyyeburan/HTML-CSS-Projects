@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+body{
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /*yatayda da ortalanması için yükseklik belirlenmeli*/
+}
+
+.search{
+    background-color: #3F3F3F;
+    height:50px;
+    display: flex;
+    align-items: center;
+    padding:10px;
+    border-radius: 50px;
+}
+.tbox{
+    float:left;
+    background: none;
+    border:none;
+    outline:none;
+    color:white;
+    font-size: 15px;
+    width: 0px;
+    transition:0.7s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: 20px;
+    float:right;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.search:hover > .tbox{
+    width: 200px;
+}

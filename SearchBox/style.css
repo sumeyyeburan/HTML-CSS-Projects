@@ -1,49 +1,56 @@
-*{
+/* Tüm elemanların kutu modelini ve varsayılan padding ve margin değerlerini sıfırlama */
+* {
     box-sizing: border-box;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 }
 
-body{
+/* Sayfa arkaplanı ve merkezde hizalama */
+body {
     background-color: gray;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /*yatayda da ortalanması için yükseklik belirlenmeli*/
+    height: 100vh; /* Sayfanın yüksekliğini tam olarak tanımlar, dikey ortalama sağlar */
 }
 
-.search{
+/* Arama kutusu stil ayarları */
+.search {
     background-color: #3F3F3F;
-    height:50px;
+    height: 50px;
     display: flex;
     align-items: center;
-    padding:10px;
+    padding: 10px;
     border-radius: 50px;
 }
-.tbox{
-    float:left;
+
+/* Metin kutusu stil ayarları */
+.tbox {
+    float: left;
     background: none;
-    border:none;
-    outline:none;
-    color:white;
+    border: none;
+    outline: none;
+    color: white;
     font-size: 15px;
-    width: 0px;
-    transition:0.7s;
+    width: 0px; /* Varsayılan olarak genişlik 0 */
+    transition: 0.7s; /* Genişliğin değişme animasyon süresi */
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.btn{
+/* Buton stil ayarları */
+.btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    color:white;
+    color: white;
     font-size: 20px;
-    float:right;
+    float: right;
     width: 50px;
     height: 50px;
     border-radius: 50px;
 }
 
-.search:hover > .tbox{
+/* Arama kutusu üzerine gelindiğinde metin kutusunun genişlemesi */
+.search:hover > .tbox {
     width: 200px;
 }
